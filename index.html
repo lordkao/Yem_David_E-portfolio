@@ -22,7 +22,6 @@
                 <div class="col-3 bg-white"><!--Compétences-->
                     <div id="list-skills" class=" list-group position-sticky top-20 mt-3 align-items-center">
                         <a id="btn-html-css" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" aria-current="true" href="#">Html5/Css3</a>
-                        <a id="btn-css" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Css3</a>
                         <a id="btn-sass" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Sass</a>
                         <a id="btn-bootstrap" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Bootstrap5</a>
                         <a id="btn-js" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Javascript</a>
@@ -51,34 +50,38 @@
                             </p>
                         </div>
                         <div id="reservia" class="row border border-2 overflow-hidden rounded-3"><!--Carousel RESERVIA-->
-                            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div id="carousel-reservia" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active  bg-dark" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class=" bg-dark" aria-current="true" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-reservia" data-bs-slide-to="0" class="active  bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-reservia" data-bs-slide-to="1" class=" bg-dark" aria-current="true" aria-label="Slide 2"></button>
                                 </div>
-                                <div id="carousel-inner" class="carousel-inner">
+                                <div id="inner-reservia" class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="5000">
                                         <div class="d-none d-md-block text-dark text-center">
                                             <h5>Desktop</h5>
                                             <p>Capture d'écran de la présentation du site Reservia sur desktop.</p>
                                         </div>
-                                        <img class="d-block w-100" src="./images/reservia_desktop.png" alt="présentation reservia format desktop">
+                                        <div class="d-flex justify-content-center bg-dark px-5">
+                                            <img class="d-block w-95" src="./images/reservia_desktop.png" alt="présentation reservia format desktop">
+                                        </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="5000">
                                         <div class="d-none d-md-block text-dark text-center">
                                             <h5>Mobile</h5>
                                             <p>Capture d'écran de la présentation du site Reservia sur mobile.</p>
                                         </div>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-center bg-dark">
                                             <img class="d-block w-50" src="./images/reservia_mobile.png" alt="présentation reservia format mobile">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                                    <span class="text-dark fw-bolder">précèdent</span>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-reservia" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">précèdent</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                                    <span class="text-dark fw-bolder">suivant</span>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-reservia" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">suivant</span>
                                 </button>
                             </div>
                             <div class="row border border-0 overflow-hidden rounded-3 mt-5"><!--présentation du projet-->
@@ -86,6 +89,57 @@
                                     Afin d'en savoir plus sur ce premier projet, voici quelques liens pour plus de détails:<br>
                                 <a href="https://lordkao.github.io/DavidYem_2_09022021/" alt="lien vers le gitpage su site reservia" target="_blank">Présentation visuel du site</a><br>
                                 <a href="https://github.com/lordkao/DavidYem_2_09022021.git" alt="lien vers le repository github" target="_blank">Lien github</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sass" class="row"><!--Sass-->
+                        <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
+                            <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation avec Sass</h3>
+                            <p class="col text-center pb-3 mb-3">
+                                Reproduction d'une maquette en HTML5 et SASS pour créer une application de reservation dans un restaurant.
+                            </p>
+                        </div>
+                        <div id="ohmyfood" class="row border border-2 overflow-hidden rounded-3"><!--Carousel Ohmyfood-->
+                            <div id="carousel-ohmyfood" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="0" class="active  bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="1" class=" bg-dark" aria-current="true" aria-label="Slide 2"></button>
+                                </div>
+                                <div id="inner-omf" class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <div class="d-none d-md-block text-dark text-center">
+                                            <h5>Desktop</h5>
+                                            <p>Capture d'écran de la présentation du site Ohmyfood sur desktop.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center bg-dark px-5">
+                                            <img class="d-block w-95" src="./images/reservia_desktop.png" alt="présentation reservia format desktop">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <div class="d-none d-md-block text-dark text-center">
+                                            <h5>Mobile</h5>
+                                            <p>Capture d'écran de la présentation du site Ohmyfood sur mobile.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center bg-dark">
+                                            <img class="d-block w-50" src="./images/ohmyfood-accueil-mobile.png" alt="présentation reservia format mobile">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">précèdent</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">suivant</span>
+                                </button>
+                            </div>
+                            <div class="row border border-0 overflow-hidden rounded-3 mt-5"><!--présentation du projet-->
+                                <p class="text-center">
+                                    Afin d'en savoir plus sur ce second projet, voici quelques liens pour plus de détails:<br>
+                                <a href="https://lordkao.github.io/DavidYem_3_26022021/" alt="lien vers le gitpage su site reservia" target="_blank">Présentation visuel du site</a><br>
+                                <a href="https://github.com/lordkao/DavidYem_3_26022021" alt="lien vers le repository github" target="_blank">Lien github</a>
                                 </p>
                             </div>
                         </div>

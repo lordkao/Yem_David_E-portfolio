@@ -6,15 +6,17 @@ section{
         @include border-radius;
     }
 }
-#carousel-inner{
-    max-height: 1032px;
-    overflow-y:auto;
-}
 #html-css{
     display: none;
 }
-#message-alert{
+#inner-omf,#inner-reservia{
+    @include height-carousel;
+}
+#sass{
     display: flex;
+}
+#message-alert{
+    display: none;
 }
 #img-default{
     display: none;

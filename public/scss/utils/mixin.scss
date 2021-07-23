@@ -1,3 +1,8 @@
 @mixin border-radius{
     border-radius: 10px;
 }
+@mixin height-carousel{
+    min-height: 856px;
+    max-height: 856px;
+    overflow-y:auto;
+}
