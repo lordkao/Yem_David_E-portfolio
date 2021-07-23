@@ -6,13 +6,16 @@ section{
         @include border-radius;
     }
 }
+#inner-omf,#inner-reservia,#inner-bootstrap{
+    @include height-carousel;
+}
 #html-css{
     display: none;
 }
-#inner-omf,#inner-reservia{
-    @include height-carousel;
-}
 #sass{
+    display: none;
+}
+#bootstrap5{
     display: none;
 }
 #message-alert{
