@@ -18,9 +18,9 @@
                 <h2 class="col-12 mx-5 my-3 text-decoration-underline">Présentation</h2>
                 <p class="col-12 mx-5 my-3">Passionné par l'univers du Web et l'informatique,j'ai réalisé ma reconversion en tant que Développeur Web.Ayant travaillé plusieurs années dans le monde de la logistique,le manque d'épanouissement professionnel s'est fait ressentir et c'est pourquoi je fait mes premiers pas dans le monde du développement web.Suite à la réalisation d'une formation Développeur Web entièrement à distance chez Openclassrooms,je suis aujourd'hui à la recherche de nouvelles opportunités afin de mettre à contribution mes compétences.</p>
             </div>
-            <div class="row mx-3 border border-1">
+            <div class="row mx-3 border border-1"><!--Contenu principal-->
                 <div class="col-3 bg-white"><!--Compétences-->
-                    <div id="list-skills" class=" list-group position-sticky top-20 mt-3 align-items-center">
+                    <div id="list-skills" class=" list-group position-sticky top-35 my-5 align-items-center">
                         <a id="btn-html-css" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" aria-current="true" href="#">Html5/Css3</a>
                         <a id="btn-sass" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Sass</a>
                         <a id="btn-bootstrap" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 w-75 radius" href="#">Bootstrap5</a>
@@ -86,7 +86,7 @@
                             </div>
                             <div class="row border border-0 overflow-hidden rounded-3 mt-5"><!--présentation du projet-->
                                 <p class="text-center">
-                                    Afin d'en savoir plus sur ce premier projet, voici quelques liens pour plus de détails:<br>
+                                    Afin d'en savoir plus sur Reservia, voici quelques liens pour plus de détails:<br>
                                 <a href="https://lordkao.github.io/DavidYem_2_09022021/" alt="lien vers le gitpage su site reservia" target="_blank">Présentation visuel du site</a><br>
                                 <a href="https://github.com/lordkao/DavidYem_2_09022021.git" alt="lien vers le repository github" target="_blank">Lien github</a>
                                 </p>
@@ -105,24 +105,44 @@
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="0" class="active  bg-dark" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="1" class=" bg-dark" aria-current="true" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="2" class="bg-dark" aria-current="true" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carousel-ohmyfood" data-bs-slide-to="3" class=" bg-dark" aria-current="true" aria-label="Slide 4"></button>
                                 </div>
                                 <div id="inner-omf" class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="5000">
+                                    <div class="carousel-item active" data-bs-interval="5000"><!--version desktop-->
                                         <div class="d-none d-md-block text-dark text-center">
                                             <h5>Desktop</h5>
                                             <p>Capture d'écran de la présentation du site Ohmyfood sur desktop.</p>
                                         </div>
                                         <div class="d-flex justify-content-center bg-dark px-5">
-                                            <img class="d-block w-95" src="./images/reservia_desktop.png" alt="présentation reservia format desktop">
+                                            <img class="d-block w-95" src="./images/ohmyfood-accueil-desktop.png" alt="présentation reservia format desktop">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <div class="d-none d-md-block text-dark text-center">
+                                            <h5>Desktop</h5>
+                                            <p>Capture d'écran de la présentation du site Ohmyfood page menu sur desktop.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center bg-dark px-5">
+                                            <img class="d-block w-95" src="./images/ohmyfood-menu-desktop.png" alt="présentation reservia format desktop">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000"><!--version mobile-->
+                                        <div class="d-none d-md-block text-dark text-center">
+                                            <h5>Mobile</h5>
+                                            <p>Capture d'écran de la présentation du site Ohmyfood page d'accueil sur mobile.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center bg-dark">
+                                            <img class="d-block w-50" src="./images/ohmyfood-accueil-mobile.png" alt="présentation reservia format mobile">
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="5000">
                                         <div class="d-none d-md-block text-dark text-center">
                                             <h5>Mobile</h5>
-                                            <p>Capture d'écran de la présentation du site Ohmyfood sur mobile.</p>
+                                            <p>Capture d'écran de la présentation du site Ohmyfood page menu sur mobile.</p>
                                         </div>
                                         <div class="d-flex justify-content-center bg-dark">
-                                            <img class="d-block w-50" src="./images/ohmyfood-accueil-mobile.png" alt="présentation reservia format mobile">
+                                            <img class="d-block w-50" src="./images/ohmyfood-menu-mobile.png" alt="présentation reservia format mobile">
                                         </div>
                                     </div>
                                 </div>
@@ -136,10 +156,18 @@
                                 </button>
                             </div>
                             <div class="row border border-0 overflow-hidden rounded-3 mt-5"><!--présentation du projet-->
-                                <p class="text-center">
-                                    Afin d'en savoir plus sur ce second projet, voici quelques liens pour plus de détails:<br>
-                                <a href="https://lordkao.github.io/DavidYem_3_26022021/" alt="lien vers le gitpage su site reservia" target="_blank">Présentation visuel du site</a><br>
-                                <a href="https://github.com/lordkao/DavidYem_3_26022021" alt="lien vers le repository github" target="_blank">Lien github</a>
+                                <ul class="d-flex flex-column align-items-center">
+                                    <h4 class="text-decoration-underline">Liste des animations sur Ohmyfood:</h4>
+                                    <div>
+                                        <li>animation sur le coeur</li>
+                                        <li>apparition des menus progressives sur la page de chaques menus</li>
+                                        <li>animation lors de la selection d'un plat</li>
+                                    </div>
+                                </ul>
+                                <p class="text-center ms-3">
+                                    Afin d'en savoir plus sur Ohmyfood, voici quelques liens pour plus de détails:<br>
+                                    <a href="https://lordkao.github.io/DavidYem_3_26022021/" alt="lien vers le gitpage su site reservia" target="_blank">Présentation visuel du site</a><br>
+                                    <a href="https://github.com/lordkao/DavidYem_3_26022021" alt="lien vers le repository github" target="_blank">Lien github</a>
                                 </p>
                             </div>
                         </div>

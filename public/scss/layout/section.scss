@@ -13,10 +13,10 @@ section{
     @include height-carousel;
 }
 #sass{
-    display: flex;
+    display: none;
 }
 #message-alert{
-    display: none;
+    display: flex;
 }
 #img-default{
     display: none;
