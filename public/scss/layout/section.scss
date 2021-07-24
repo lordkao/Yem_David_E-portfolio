@@ -24,3 +24,6 @@ section{
 #img-default{
     display: flex;
 }
+.resize-img{
+    @include width-img;
+}
