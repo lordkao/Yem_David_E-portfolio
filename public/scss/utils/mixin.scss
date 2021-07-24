@@ -2,6 +2,27 @@
     border-radius: $radius;
 }
 @mixin height-carousel{
-    max-height: 856px;
+    max-height: 300px;
     overflow-y:auto;
+    @media screen and(min-width:575px) {
+        max-height: 350px;
+    }
+    @media screen and(min-width:767px) {
+        max-height: 400px;
+    }
+    @media screen and(min-width:991px) {
+        max-height: 470px;
+    }
+    @media screen and(min-width:1023px) {
+        max-height: 600px;
+    }
+}
+@mixin width-img{
+    width: 80%;
+    @media screen and(min-width:767px) {
+        width: 70%;
+    }
+    @media screen and(min-width:1023px) {
+        width: 60%;
+    }
 }

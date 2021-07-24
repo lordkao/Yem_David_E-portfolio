@@ -4,12 +4,15 @@ section{
 #list-skills{/*boutons liste compétences*/
     & a{
         @include border-radius;
+        @media screen and(min-width:992px){
+            width: 75%;
+        }
     }
 }
 #inner-omf,#inner-reservia,#inner-bootstrap,#inner-mysql{
     @include height-carousel;
 }
-#html-css,#sass,#bootstrap5{
+#html-css,#sass,#bootstrap5,#mysql2{
     display: none;
 }
 #message-alert{
@@ -20,4 +23,7 @@ section{
 }
 #img-default{
     display: flex;
+}
+.resize-img{
+    @include width-img;
 }
