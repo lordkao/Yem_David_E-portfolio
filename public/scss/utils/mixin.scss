@@ -1,5 +1,5 @@
-@mixin border-radius{
-    border-radius: 10px;
+@mixin border-radius($radius:10px){
+    border-radius: $radius;
 }
 @mixin height-carousel{
     min-height: 856px;
