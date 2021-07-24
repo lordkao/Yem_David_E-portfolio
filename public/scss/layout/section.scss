@@ -20,7 +20,10 @@ section{
 }
 #message-alert{
     display: flex;
+    & .alert-warning{
+        @include border-radius($radius:20px);
+    }
 }
 #img-default{
-    display: none;
+    display: flex;
 }
