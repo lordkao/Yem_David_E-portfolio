@@ -4,6 +4,7 @@ const htmlCss = document.getElementById('html-css')
 const sass = document.getElementById('sass')
 const bootstrap = document.getElementById('bootstrap5')
 const mysql = document.getElementById('mysql2')
+const containerSkills = document.getElementById('container-skills')
 
 /*Boutons*/
 const btnHtmlCss = document.getElementById('btn-html-css')
@@ -11,7 +12,7 @@ const btnSass = document.getElementById('btn-sass')
 const btnBootstrap = document.getElementById('btn-bootstrap')
 const btnMysql = document.getElementById('btn-mysql')
 const btnAlertMessage = document.getElementById('btn-alert')
-        
+
 function displayNone(value){
     value.preventDefault()
     imgDefault.style.display="none"
@@ -25,6 +26,7 @@ function boutonSkills(e,value1){
     if(value1.style.display == 'flex'){
         displayNone(e)
         imgDefault.style.display = 'flex'
+        window.scrollTo(0,0)
     }
     else{
         displayNone(e)
