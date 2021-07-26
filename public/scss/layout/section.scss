@@ -24,6 +24,12 @@ section{
 #img-default{
     display: flex;
 }
+.apparition{
+    animation: apparition 0.3s ease-out 0.2s both;
+}
+.apparition-carousel{
+    animation: apparition-carousel 0.3s ease-out 0.2s both;
+}
 .resize-img{
     @include width-img;
 }
