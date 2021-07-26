@@ -4,14 +4,17 @@ const htmlCss = document.getElementById('html-css')
 const sass = document.getElementById('sass')
 const bootstrap = document.getElementById('bootstrap5')
 const mysql = document.getElementById('mysql2')
-
+const expressMongo = document.getElementById('express-mongodb')
+const js = document.getElementById('javascript')
 /*Boutons*/
 const btnHtmlCss = document.getElementById('btn-html-css')
 const btnSass = document.getElementById('btn-sass')
 const btnBootstrap = document.getElementById('btn-bootstrap')
 const btnMysql = document.getElementById('btn-mysql')
 const btnAlertMessage = document.getElementById('btn-alert')
-        
+const btnMongo = document.getElementById('btn-mongodb')
+const btnJs = document.getElementById('btn-js')
+
 function displayNone(value){
     value.preventDefault()
     imgDefault.style.display="none"
@@ -20,11 +23,14 @@ function displayNone(value){
     sass.style.display = 'none'
     bootstrap.style.display = 'none'
     mysql.style.display = 'none'
+    expressMongo.style.display = 'none'
+    js.style.display = 'none'
 }
 function boutonSkills(e,value1){
     if(value1.style.display == 'flex'){
         displayNone(e)
         imgDefault.style.display = 'flex'
+        window.scrollTo(0,0)
     }
     else{
         displayNone(e)
@@ -50,6 +56,8 @@ const boutonList = new BoutonList([
     { bouton: btnHtmlCss, skill: htmlCss},
     { bouton: btnSass, skill: sass},
     { bouton: btnBootstrap, skill: bootstrap},
-    { bouton: btnMysql, skill: mysql}
+    { bouton: btnMysql, skill: mysql},
+    { bouton: btnMongo, skill: expressMongo},
+    { bouton : btnJs, skill: js}
 ])
 boutonList.clicked()
