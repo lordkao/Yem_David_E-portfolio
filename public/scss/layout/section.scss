@@ -23,6 +23,7 @@ section{
 }
 #img-default{
     display: flex;
+    animation: apparition 0.3s linear 0.2s 1 both;
 }
 .resize-img{
     @include width-img;
