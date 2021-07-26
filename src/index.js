@@ -14,7 +14,7 @@ const btnAlertMessage = document.getElementById('btn-alert')
 
 function displayNone(value){
     value.preventDefault()
-    imgDefault.style.display = 'none'
+    imgDefault.style.display="none"
     alertMessage.style.display = 'none'
     htmlCss.style.display ='none'
     sass.style.display = 'none'
