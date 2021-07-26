@@ -14,9 +14,23 @@
             <p class="row text-center h2 text-primary">Developpeur Web</p>
         </header>
         <section class="container-fluid min-vh-75 pb-5">
-            <div class="row px-3 justify-content-center mx-sm-5"><!--Présentation-->
-                <h2 class="col-md-9 my-3 text-decoration-underline">Présentation</h2>
-                <p class="col-md-9 my-3">Passionné par l'univers du Web et l'informatique,j'ai réalisé ma reconversion en tant que Développeur Web.Ayant travaillé plusieurs années dans le monde de la logistique,le manque d'épanouissement professionnel s'est fait ressentir et c'est pourquoi je fait mes premiers pas dans le monde du développement web.Suite à la réalisation d'une formation Développeur Web entièrement à distance chez Openclassrooms,je suis aujourd'hui à la recherche de nouvelles opportunités afin de mettre à contribution mes compétences.</p>
+            <div class="row d-flex justify-content-center">
+                <div id="accordion" class="col-md-9 accordion accordion-flush p-0"><!--Présentation-->
+                    <div class="accordion-item rounded-3">
+                        <h2 class="accordion-header my-3" id="headingOne">
+                          <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Mon profil
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                          <div class="accordion-body">
+                            Passionné par l'univers du Web et l'informatique,j'ai réalisé ma reconversion en tant que Développeur Web.Ayant travaillé plusieurs années dans le monde de la logistique,le manque d'épanouissement professionnel s'est fait ressentir et c'est pourquoi je fait mes premiers pas dans le monde du développement web.Suite à la réalisation d'une formation Développeur Web entièrement à distance chez Openclassrooms,je suis aujourd'hui à la recherche de nouvelles opportunités afin de mettre à contribution mes compétences.
+                          </div>
+                        </div>
+                      </div>
+                    <!--<h2 class="col-md-9 my-3 text-decoration-underline text-center">Mon profil</h2>
+                    <p class="col-md-9 my-3">Passionné par l'univers du Web et l'informatique,j'ai réalisé ma reconversion en tant que Développeur Web.Ayant travaillé plusieurs années dans le monde de la logistique,le manque d'épanouissement professionnel s'est fait ressentir et c'est pourquoi je fait mes premiers pas dans le monde du développement web.Suite à la réalisation d'une formation Développeur Web entièrement à distance chez Openclassrooms,je suis aujourd'hui à la recherche de nouvelles opportunités afin de mettre à contribution mes compétences.</p>-->
+                </div>
             </div>
             <div id="message-alert" class="row justify-content-center">
                 <div class="col-md-9 alert alert-dismissible fade show alert-warning"><!--message alerte-->
@@ -39,7 +53,7 @@
                         <a id="btn-mongodb" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">MongoDb/Express</a>
                     </div>
                 </div>
-                <div class="col-md-9 col-lg-6 bg-white"><!--Preuves et liens github-->
+                <div class="col-md-9 col-lg-6 bg-white d-flex align-items-center justify-content-center"><!--Preuves et liens github-->
                     <div id="img-default" class="justify-content-center"><!--image par défaut-->
                         <img class="d-block w-75" src="./images/pc-bureau.jpg" alt="pc de bureau">
                     </div>
