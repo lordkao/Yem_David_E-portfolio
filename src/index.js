@@ -11,7 +11,7 @@ const btnSass = document.getElementById('btn-sass')
 const btnBootstrap = document.getElementById('btn-bootstrap')
 const btnMysql = document.getElementById('btn-mysql')
 const btnAlertMessage = document.getElementById('btn-alert')
-
+        
 function displayNone(value){
     value.preventDefault()
     imgDefault.style.display="none"
@@ -41,6 +41,7 @@ class BoutonList{
             let skill = elt.skill
             bouton.addEventListener('click',function(e){
                 boutonSkills(e,skill)
+                window.scrollTo(0,skill.offsetTop)
             })
         });
     }
