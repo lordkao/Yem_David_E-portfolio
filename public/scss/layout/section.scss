@@ -27,3 +27,9 @@ section{
 .resize-img{
     @include width-img;
 }
+.unset-display{
+    display: flex;
+    @media screen and(min-width:768px) {
+        display: unset;
+    }
+}
