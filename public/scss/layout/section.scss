@@ -9,10 +9,10 @@ section{
         }
     }
 }
-#inner-omf,#inner-reservia,#inner-bootstrap,#inner-mysql{
+#inner-omf,#inner-reservia,#inner-bootstrap,#inner-mysql,#inner-express{
     @include height-carousel;
 }
-#html-css,#sass,#bootstrap5,#mysql2{
+#html-css,#sass,#bootstrap5,#mysql2,#express-mongodb{
     display: none;
 }
 #message-alert{
