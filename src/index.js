@@ -14,6 +14,7 @@ const btnMysql = document.getElementById('btn-mysql')
 const btnAlertMessage = document.getElementById('btn-alert')
 const btnMongo = document.getElementById('btn-mongodb')
 const btnJs = document.getElementById('btn-js')
+let headerHeight = document.getElementById('header').getBoundingClientRect().height
 
 function displayNone(value){
     value.preventDefault()
@@ -46,8 +47,12 @@ class BoutonList{
             let bouton = elt.bouton
             let skill = elt.skill
             bouton.addEventListener('click',function(e){
+                let pos = () => { /*calcul pour obtenir la valeur à scroll jusqu'à atteindre l'élément*/
+                    let value = skill.offsetTop +headerHeight
+                    return value
+                }
                 boutonSkills(e,skill)
-                window.scrollTo(0,skill.offsetTop)
+                window.scrollTo(0,pos())
             })
         });
     }
