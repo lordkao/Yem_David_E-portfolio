@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <header class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-15">
+        <header id="header" class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-15">
             <h1 class="row text-center">Yem David</h1>
             <p class="row text-center h2 text-primary">Developpeur Web</p>
             <div class="row w-100">
@@ -36,13 +36,13 @@
                 </div>
             </div>
         </header>
-        <section class="container-fluid min-vh-75 pb-5">
+        <section class="container-fluid min-vh-75 pb-5 position-relative">
             <div class="row d-flex justify-content-center">
-                <div id="accordion" class="col-md-9 accordion accordion-flush p-0"><!--Présentation-->
+                <div id="accordion" class="col-md-9 col-xl-8 accordion accordion-flush p-0"><!--Présentation-->
                     <div class="accordion-item rounded-3">
                         <h2 class="accordion-header my-3" id="headingOne">
-                          <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Mon profil
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="h5">Mon profil</span>
                           </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordion">
@@ -51,12 +51,10 @@
                           </div>
                         </div>
                       </div>
-                    <!--<h2 class="col-md-9 my-3 text-decoration-underline text-center">Mon profil</h2>
-                    <p class="col-md-9 my-3">Passionné par l'univers du Web et l'informatique,j'ai réalisé ma reconversion en tant que Développeur Web.Ayant travaillé plusieurs années dans le monde de la logistique,le manque d'épanouissement professionnel s'est fait ressentir et c'est pourquoi je fait mes premiers pas dans le monde du développement web.Suite à la réalisation d'une formation Développeur Web entièrement à distance chez Openclassrooms,je suis aujourd'hui à la recherche de nouvelles opportunités afin de mettre à contribution mes compétences.</p>-->
                 </div>
             </div>
             <div id="message-alert" class="row justify-content-center">
-                <div class="col-md-9 alert alert-dismissible fade show alert-warning"><!--message alerte-->
+                <div class="col-md-9 col-xl-8 alert alert-dismissible fade show alert-success"><!--message alerte-->
                     <div class="d-flex align-items-center">
                         <p class="p-2">
                             En cliquant sur l'un des boutons présents dans la liste vous découvrirez les différents projets que j'ai réaliser avec la/les technos correspondantes.
@@ -65,22 +63,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row flex-column flex-md-row justify-content-center mx-md-3"><!--Contenu principal-->
-                <div class="col-md-3 col-lg-3 bg-white unset-display justify-content-center"><!--Compétences-->
+            <div class="row flex-column flex-md-row justify-content-center"><!--Contenu principal-->
+                <div class="col-md-3 col-lg-3 col-xl-2 unset-display justify-content-center"><!--Compétences-->
                     <div id="list-skills" class="col-9 col-sm-6 col-md-12 list-group position-sticky top-35 my-5 align-items-center">
-                        <a id="btn-html-css" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" aria-current="true" href="#">Html5/Css3</a>
-                        <a id="btn-sass" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">Sass</a>
-                        <a id="btn-bootstrap" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">Bootstrap5</a>
-                        <a id="btn-js" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">Javascript</a>
-                        <a id="btn-mongodb" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">MongoDb/Express</a>
-                        <a id="btn-mysql" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1" href="#">Mysql/Express</a>
+                        <a id="btn-html-css" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" aria-current="true" href="#">Html5/Css3</a>
+                        <a id="btn-sass" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" href="#">Sass</a>
+                        <a id="btn-bootstrap" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" href="#">Bootstrap5</a>
+                        <a id="btn-js" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" href="#">Javascript</a>
+                        <a id="btn-mongodb" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" href="#">MongoDb/Express</a>
+                        <a id="btn-mysql" class="list-group-item list-group-item-action list-group-item-primary text-center my-1 border-1 bg-white text-dark" href="#">Mysql/Express</a>
                     </div>
                 </div>
-                <div id="container-skills" class="col-md-9 col-lg-6 bg-white d-flex align-items-center justify-content-center"><!--Preuves et liens github-->
-                    <div id="img-default" class="justify-content-center apparition"><!--image par défaut-->
-                        <img class="d-block w-75" src="./images/pc-bureau.jpg" alt="pc de bureau">
+                <div id="container-skills" class="col-md-9 col-lg-6 d-flex align-items-center justify-content-center"><!--Preuves et liens github-->
+                    <div id="img-default" class="justify-content-center apparition overflow-hidden rounded-3"><!--image par défaut-->
+                        <img class="d-block w-100" src="./images/pc-bureau.jpg" alt="pc de bureau">
                     </div>
-                    <div id="html-css" class="row apparition-carousel"><!--html/css-->
+                    <div id="html-css" class="row apparition-carousel text-white"><!--html/css-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation en Html5/Css3</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -95,7 +93,7 @@
                                 </div>
                                 <div id="inner-reservia" class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="5000">
-                                        <div class="d-none d-md-block text-dark text-center">
+                                        <div class="d-none d-md-block text-center">
                                             <h5>Desktop</h5>
                                             <p>Capture d'écran de la présentation du site Reservia sur desktop.</p>
                                         </div>
@@ -104,7 +102,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="5000">
-                                        <div class="d-none d-md-block text-dark text-center">
+                                        <div class="d-none d-md-block text-center">
                                             <h5>Mobile</h5>
                                             <p>Capture d'écran de la présentation du site Reservia sur mobile.</p>
                                         </div>
@@ -131,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="sass" class="row apparition-carousel"><!--Sass-->
+                    <div id="sass" class="row apparition-carousel text-white"><!--Sass-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation avec Sass</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -210,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="bootstrap5" class="row apparition-carousel"><!--Bootstrap-->
+                    <div id="bootstrap5" class="row apparition-carousel text-white"><!--Bootstrap-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation Bootstrap</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -261,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="javascript" class="row apparition-carousel"><!--Js-->
+                    <div id="javascript" class="row apparition-carousel text-white"><!--Js-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation Html5/Css3/Sass/Js</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -366,12 +364,12 @@
                             <div class="row border border-0 overflow-hidden rounded-3 mt-5"><!--présentation du projet-->
                                 <p class="text-center">
                                     Afin d'en savoir plus sur Orinoco, voici quelques liens pour plus de détails:<br>
-                                <a href="https://github.com/lordkao/DavidYem_5_28042021.git" alt="lien vers le repository github" target="_blank">Lien github Backend</a>
+                                <a href="https://github.com/lordkao/DavidYem_5_28042021.git" alt="lien vers le repository github" target="_blank">Lien github repository</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div id="mysql2" class="row apparition-carousel"><!--Mysql-->
+                    <div id="mysql2" class="row apparition-carousel text-white"><!--Mysql-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation Html5/Css3/Sass/Express/Mysql/Node.js</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -522,7 +520,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="express-mongodb" class="row apparition-carousel"><!--Express-->
+                    <div id="express-mongodb" class="row apparition-carousel text-white"><!--Express-->
                         <div class="row border border-0 overflow-hidden rounded-3"><!--title et présentation-->
                             <h3 class="col-12 text-center text-decoration-underline my-5">Réalisation Express/MongoDb</h3>
                             <p class="col text-center pb-3 mb-3">
@@ -585,7 +583,7 @@
                 </div>
             </div>
         </section>
-        <footer class="min-vh-15 text-center d-flex align-items-center justify-content-center bg-dark">
+        <footer class="min-vh-15 text-center d-flex align-items-center justify-content-center">
             <ul class="list-inline my-3 unset-display flex-column flex-md-row justify-content-center">
                 <li class="list-inline-item bg-secondary px-3 rounded-pill my-2 mx-1"><a class="text-decoration-none text-white fs-4" href="https://github.com/lordkao" target="_blank"><i class="fab fa-github d-block-inline me-2"></i>Lien Github</a></li>
                 <li class="list-inline-item bg-secondary px-3 rounded-pill my-2 mx-1"><a class="text-decoration-none text-white fs-4" href="https://www.linkedin.com/in/david-yem-a8b956203?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkFoQWomOTD2ZjWqCpXcUPw%3D%3D" target="_blank"><i class="fab fa-linkedin me-2"></i></i>Linkedin</a></li>
