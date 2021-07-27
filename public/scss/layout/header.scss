@@ -3,5 +3,7 @@
     src: url('./Akira.otf');
 }
 header{
-    font-family: 'Akira Expanded','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    & h1,p{
+        font-family: 'Akira Expanded','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
