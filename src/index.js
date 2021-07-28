@@ -11,7 +11,7 @@ const btnHtmlCss = document.getElementById('btn-html-css')
 const btnSass = document.getElementById('btn-sass')
 const btnBootstrap = document.getElementById('btn-bootstrap')
 const btnMysql = document.getElementById('btn-mysql')
-const btnAlertMessage = document.getElementById('btn-alert')
+/*const btnAlertMessage = document.getElementById('btn-alert')*/
 const btnMongo = document.getElementById('btn-mongodb')
 const btnJs = document.getElementById('btn-js')
 let headerHeight = document.getElementById('header').getBoundingClientRect().height
@@ -19,7 +19,7 @@ let headerHeight = document.getElementById('header').getBoundingClientRect().hei
 function displayNone(value){
     value.preventDefault()
     imgDefault.style.display="none"
-    alertMessage.style.display = 'none'
+    /*alertMessage.style.display = 'none'*/
     htmlCss.style.display ='none'
     sass.style.display = 'none'
     bootstrap.style.display = 'none'
