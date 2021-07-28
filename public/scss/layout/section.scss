@@ -3,7 +3,7 @@ section{
     background: url("../../images/wallpaper-hd.jpg") no-repeat center/cover;
 }
 #list-skills{/*boutons liste compétences*/
-    animation: listSkills 0.3s ease-out 0.3s both;
+    animation: listSkills 0.6s ease-out 0.3s both;
     & a{
         @include border-radius;
         @media screen and(min-width:992px){
@@ -27,7 +27,7 @@ section{
     display: flex;
 }
 .apparition{
-    animation: apparition 0.3s ease-out 0.2s both;
+    animation: apparition 0.6s ease-out 0.2s both;
 }
 .apparition-carousel{
     animation: apparition-carousel 0.3s ease-out 0.2s both;
@@ -43,4 +43,8 @@ section{
 }
 #message-alert{
     @include opacity;
+}
+#infos{
+    display: none;
+    z-index: 1;
 }
