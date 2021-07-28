@@ -3,7 +3,7 @@ section{
     background: url("../../images/wallpaper-hd.jpg") no-repeat center/cover;
 }
 #list-skills{/*boutons liste compétences*/
-    @include opacity($value:0.8);
+    animation: listSkills 0.3s ease-out 0.3s both;
     & a{
         @include border-radius;
         @media screen and(min-width:992px){
