@@ -44,3 +44,7 @@ section{
 #message-alert{
     @include opacity;
 }
+#infos{
+    display: none;
+    z-index: 1;
+}

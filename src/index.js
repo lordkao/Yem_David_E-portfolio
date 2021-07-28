@@ -1,11 +1,12 @@
 const imgDefault = document.getElementById('img-default')
-const alertMessage = document.getElementById('message-alert')
+/*const alertMessage = document.getElementById('message-alert')*/
 const htmlCss = document.getElementById('html-css')
 const sass = document.getElementById('sass')
 const bootstrap = document.getElementById('bootstrap5')
 const mysql = document.getElementById('mysql2')
 const expressMongo = document.getElementById('express-mongodb')
 const js = document.getElementById('javascript')
+const infos = document.getElementById('infos')
 /*Boutons*/
 const btnHtmlCss = document.getElementById('btn-html-css')
 const btnSass = document.getElementById('btn-sass')
@@ -14,9 +15,20 @@ const btnMysql = document.getElementById('btn-mysql')
 /*const btnAlertMessage = document.getElementById('btn-alert')*/
 const btnMongo = document.getElementById('btn-mongodb')
 const btnJs = document.getElementById('btn-js')
-let headerHeight = document.getElementById('header').getBoundingClientRect().height
+const btnInfos = document.getElementById('btn-infos')
+const btnCloseInfos = document.getElementById('btn-close')
 
-function displayNone(value){
+btnInfos.addEventListener('click',function(e){/*boutons pour afficher les coordonnées*/
+    e.preventDefault()
+    infos.style.display = 'flex'
+    btnCloseInfos.addEventListener('click',function(){
+        infos.style.display = 'none'
+    })
+})
+
+let headerHeight = document.getElementById('header').getBoundingClientRect().height/*taille du header*/
+
+function displayNone(value){/*Désactive tous les blocs de compétences*/
     value.preventDefault()
     imgDefault.style.display="none"
     /*alertMessage.style.display = 'none'*/
@@ -27,7 +39,7 @@ function displayNone(value){
     expressMongo.style.display = 'none'
     js.style.display = 'none'
 }
-function boutonSkills(e,value1){
+function boutonSkills(e,value1){/*Active un bloc de compétence ou le desactive si celui-ci est déjà actif*/
     if(value1.style.display == 'flex'){
         displayNone(e)
         imgDefault.style.display = 'flex'
@@ -38,7 +50,7 @@ function boutonSkills(e,value1){
         value1.style.display ='flex'
     }
 }
-class BoutonList{
+class BoutonList{/*Création d'une classe pour gérer les boutons et les évènements*/
     constructor(array){
         this.array = array
     }

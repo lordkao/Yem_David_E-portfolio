@@ -24,10 +24,10 @@
                             <div class="collapse navbar-collapse justify-content-center" id="navbar">
                                 <ul class="navbar-nav mb-lg-0">
                                     <li class="nav-item bg-primary rounded-3 mx-md-3 my-1 px-2">
-                                        <a class="nav-link active text-warning" href="#"><i class="far fa-file-alt me-2 fs-3"></i>Mon CV</a>
+                                        <a class="nav-link active text-warning" href="./CV_Yem_David 1.pdf" target="_blank"><i class="far fa-file-alt me-2 fs-3"></i>Mon CV</a>
                                     </li>
                                     <li class="nav-item bg-primary rounded-3 mx-md-3 my-1 px-2">
-                                        <a class="nav-link text-warning" href="#"><i class="fas fa-info me-2 fs-3"></i>Mes coordonnées</a>
+                                        <a id="btn-infos" class="nav-link text-warning" href="#"><i class="fas fa-info me-2 fs-3"></i>Mes coordonnées</a>
                                     </li>
                                 </ul>
                             </div>
@@ -37,6 +37,21 @@
             </div>
         </header>
         <section class="container-fluid min-vh-75 pb-5 position-relative">
+            <div id="infos" class="position-absolute top-0 start-0 end-0 justify-content-center">
+                <div class="alert alert-dismissible alert-success justify-content-center"><!--fenêtre mes coordonnées-->
+                    <div class="d-flex flex-column justify-content-center">
+                        <h2 class="text-decoration-underline">Mes coordonnées :</h2>
+                        <p class="p-0">
+                            Nom : Yem<br>
+                            Prénom : David<br>
+                            Région : Gard(30)<br>
+                            Numéro : 06 89 14 72 99<br>
+                            Email : david13200arles@hotmail.fr<br>
+                        </p>
+                        <button id="btn-close" type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
             <div class="row d-flex justify-content-center">
                 <div id="accordion" class="col-md-9 col-xl-8 accordion accordion-flush p-0"><!--Présentation-->
                     <div class="accordion-item rounded-3">
